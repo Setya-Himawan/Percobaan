@@ -30,6 +30,7 @@ button {width: 180px;
     outline: none;
     cursor: pointer;
     position: relative;
+    z-index: 10;
     padding: 0px;
     overflow: hidden;
     transition: all .5s;
