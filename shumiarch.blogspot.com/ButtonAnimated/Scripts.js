@@ -89,7 +89,7 @@ if (document.body.animate) {
 function applyWrapperStyles() {
     const wrapper = document.querySelector('.wrapper');
 
-    if (window.matchMedia("(max-width: 760px)").matches) {
+    if (window.matchMedia("(max-width: 768px)").matches) {
         // Jika lebar layar kurang dari atau sama dengan 411px
         wrapper.style.display = 'flex';
         wrapper.style.flexDirection = 'column';
