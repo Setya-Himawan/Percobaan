@@ -15,7 +15,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  overflow: auto;
+  overflow: visible;
   text-align: center;
 }
 button {width: 180px;
