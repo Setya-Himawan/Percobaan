@@ -31,7 +31,7 @@ button {width: 180px;
     cursor: pointer;
     position: relative;
     padding: 0px;
-    overflow: visible;
+    overflow: hidden;
     transition: all .5s;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
     border-radius: 10px; /* 모서리를 둥글게 만들기 위한 속성 */
