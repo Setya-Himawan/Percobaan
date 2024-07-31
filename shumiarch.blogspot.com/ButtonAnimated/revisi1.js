@@ -63,6 +63,9 @@ function createParticle (x, y, type) {
 
   particle.style.width = `${width}px`;
   particle.style.height = `${height}px`;
+  particle.style.position = 'absolute'; // Atur posisi partikel menjadi absolute
+  particle.style.pointerEvents = 'none'; // Agar partikel tidak menghalangi interaksi dengan elemen lain
+
   const animation = particle.animate([
     {
       transform: `translate(-50%, -50%) translate(${x}px, ${y}px) rotate(0deg)`,
