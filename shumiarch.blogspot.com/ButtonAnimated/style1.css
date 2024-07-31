@@ -131,3 +131,8 @@ button:hover span {
     animation-play-state: paused;
 }
 }
+
+.preloader {
+  position: absolute;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png);
+}
