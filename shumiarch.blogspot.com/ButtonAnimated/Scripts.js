@@ -1,4 +1,4 @@
-function pop (e) {
+ function pop (e) {
   let amount = 30;
   switch (e.target.dataset.type) {
     case 'shadow':
@@ -31,7 +31,7 @@ function createParticle (x, y, type) {
   let destinationY = (Math.random() - 0.5) * 300;
   let rotation = Math.random() * 520;
   let delay = Math.random() * 200;
-  
+
   switch (type) {
     case 'square':
       particle.style.background = `hsl(${Math.random() * 90 + 270}, 70%, 60%)`;
@@ -60,7 +60,7 @@ function createParticle (x, y, type) {
       delay = Math.random() * 1000;
       break;
   }
-  
+
   particle.style.width = `${width}px`;
   particle.style.height = `${height}px`;
   const animation = particle.animate([
@@ -86,3 +86,26 @@ function removeParticle (e) {
 if (document.body.animate) {
   document.querySelectorAll('button').forEach(button => button.addEventListener('click', pop));
 }
+function applyWrapperStyles() {
+    const wrapper = document.querySelector('.wrapper');
+
+    if (window.matchMedia("(max-width: 540px)").matches) {
+        // Jika lebar layar kurang dari atau sama dengan 411px
+        wrapper.style.display = 'flex';
+        wrapper.style.flexDirection = 'column';
+        wrapper.style.alignItems = 'center';
+        wrapper.style.gap = '15px';
+    } else {
+        // Mengembalikan ke style default jika tidak memenuhi kondisi
+        wrapper.style.display = '';
+        wrapper.style.flexDirection = '';
+        wrapper.style.alignItems = '';
+        wrapper.style.gap = '';
+    }
+}
+
+// Memanggil fungsi saat halaman dimuat
+window.addEventListener('load', applyWrapperStyles);
+
+// Memanggil fungsi saat ukuran jendela diubah
+window.addEventListener('resize', applyWrapperStyles);
