@@ -1,4 +1,4 @@
- function pop (e) {
+function pop (e) {
   let amount = 30;
   switch (e.target.dataset.type) {
     case 'shadow':
@@ -86,6 +86,7 @@ function removeParticle (e) {
 if (document.body.animate) {
   document.querySelectorAll('button').forEach(button => button.addEventListener('click', pop));
 }
+
 function applyWrapperStyles() {
     const wrapper = document.querySelector('.wrapper');
 
