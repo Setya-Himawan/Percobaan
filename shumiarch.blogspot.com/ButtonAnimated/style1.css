@@ -9,8 +9,6 @@
   background-size: contain;
 }
 
-
-
 body {
   display: flex;
   min-height: 100vh;
@@ -20,7 +18,6 @@ body {
   overflow: auto;
   text-align: center;
 }
-
 button {width: 180px;
     height: 90px;
     background: linear-gradient(to left top, #FF3152 50%, #FF3152 50%); /* 밝은 파란색 그라디언트 */
